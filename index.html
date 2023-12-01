@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Phone Hunting</title>
+    <style>
+        .switchTheme{
+            background-color: white !important;
+            color: black !important;
+        }
+    </style>
+</head>
+<body id="body" class="container bg-black text-white">
+    <header class="d-flex align-items-center justify-content-between py-3">
+        <h1 class="text-center">Hunting Phone</h1>
+        <div class="form-check form-switch">
+            <input class="form-check-input fs-3" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+        </div>
+    </header>
+    <main>
+        <section class="pt-1 pb-3">
+                <div class="d-flex align-items-center gap-3">
+                    <input type="search" class="form-control fs-5" id="search-filed" placeholder="Search">
+                    <button id="search-btn" type="submit" class="btn btn-primary fs-5">Search</button>
+                </div>
+                <div id="no-found" class="d-none">
+                    <h3 class="mt-4 text-center">No Phone Found</h3>
+                </div>
+        </section>
+        <!-- Card Section -->
+        <section class="py-3">
+            <div id="card-container" class="row g-4">
+                <!-- Dynamic Card -->
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
